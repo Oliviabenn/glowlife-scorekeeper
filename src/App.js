@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './index.css';
 import Home from './Home';
 import Scores from './Scores';
 
@@ -12,9 +12,9 @@ function App() {
       <div className="content">
         <Home/>
 
-        
-
-        <a href={link}>GlowLife.com</a>
+        <div className="web-button">
+          <button><a href={link}>GlowLife.com</a></button>
+          </div>
 
 
     </div>
