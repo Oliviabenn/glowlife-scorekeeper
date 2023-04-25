@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './index.css';
 import Home from './Home';
 import Scores from './Scores';
+import Form from './form';
 
 function App() {
   const title = 'GlowLife Scorekeeper';
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <div className="content">
         <Home/>
+          <Form/>
 
         <div className="web-button">
           <button><a href={link}>GlowLife.com</a></button>

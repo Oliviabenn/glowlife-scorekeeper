@@ -3,7 +3,8 @@
 * {
   margin: 0;
   font-family: "Bebas Neue";
-  color: hsl(131, 70%, 52%);
+  color:#F2F047;
+  ;
   background-color:black;
 }
 
@@ -32,7 +33,7 @@ h2 {
 
 button {
   border-width: 2px;
-  border-color: hsl(131, 70%, 52%);
+  border-color: #F2F047;
   letter-spacing: .2rem;
   text-align: center;
   border-style: dotted;
