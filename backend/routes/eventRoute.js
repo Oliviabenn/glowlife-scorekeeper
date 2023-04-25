@@ -54,7 +54,34 @@ router.post("/add-event", (req,res)=> {
 })
 
 
-router.post
+router.patch("/score", (req, res)=> {
+    Event.find({name: req.body.name})
+    .then(response=> {
+        let point= response[0].point;
+            point = req.body.point;
+
+        Event.updateOne({name: req.body.name}, {$set: {point : point  }})
+        .then(response=> {
+            res.status(200).json({
+                message: "Point updated successfully",
+                event: response
+            })
+        })   
+       .catch(err=> {
+        res.status(500).json({
+            message: "Internal server error",
+            error: err
+        })
+    })
+
+    })  
+    .catch(err=> {
+        res.status(500).json({
+            message: "Internal server error",
+            error: err
+        })
+    })
+})
 
 
 module.exports= router;
