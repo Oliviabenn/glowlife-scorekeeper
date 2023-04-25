@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Home';
+import Scores from './Scores';
 
 function App() {
+  const title = 'GlowLife Scorekeeper';
+  const link = "http://www.glowlife.com"
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <Home/>
+
+        
+
+        <a href={link}>GlowLife.com</a>
+
+
     </div>
+  </div>
   );
 }
 
 export default App;
+
+//TODO: 
+//Create a /admin route (does not have to be linked in the main app) that creates events in the database:
+// Have a tab for events with columns for name and location
+// The admin page would have a create event form with name and location fields with a list of all events, including the id of the event
