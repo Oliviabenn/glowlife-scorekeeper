@@ -2,7 +2,7 @@ import logo from './logo.png';
 import './index.css';
 import Home from './Home';
 import Scores from './Scores';
-import Form from './form';
+import Form from './Form';
 
 function App() {
   const title = 'GlowLife Scorekeeper';

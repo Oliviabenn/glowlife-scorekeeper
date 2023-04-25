@@ -17,12 +17,24 @@ class Form extends Component {
      )
     }
 
+    handleEventID = (event) => {
+        this.setState({
+            username: event.target.value
+        }
+     )
+    }
+
+    handleSubmit = event => {
+        alert('${this.state.username} ${this.state.eventid}')
+    }
+
     render(){
         return(
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Event ID #:</label>
-                    <input type ="text"/>
+                    <input type ="text" value = {this.state.eventid}
+                    onChange = {this.handleEventID}/>
 
                     <label>Player Name:</label>
                     <input type ="text" value = {this.state.username}
