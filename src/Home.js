@@ -1,7 +1,7 @@
 const Home = () =>{
     return (
         <div className="home">
-            <h1>Home</h1>
+            <h1>Enter your name and event ID # to start playing!</h1>
         </div>
 
     );

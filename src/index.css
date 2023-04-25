@@ -3,13 +3,30 @@
 * {
   margin: 0;
   font-family: "Bebas Neue";
-  color:#F2F047;
-  ;
-  background-color:black;
+  color:#000000;
+  padding: 1rem;
+  align-items: center;
+}
+
+img {
+  padding: 3rem;
+}
+
+body{
+  background: -webkit-linear-gradient(#3f3f3f, #000000);
+  align-items: center;
+
+}
+
+div{
+
 }
 
 a {
   text-decoration: none;
+  align-items: center;
+  color:#F2F047;
+
 }
 
 a:hover {
@@ -18,6 +35,8 @@ a:hover {
 }
 
 h1 {
+  color:#F2F047;
+  text-align: center;
   display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
@@ -28,15 +47,38 @@ h1 {
 }
 
 h2 {
-  
 }
+  
 
 button {
-  border-width: 2px;
+  border-width: 3px;
   border-color: #F2F047;
+  color:#F2F047;
+  background-color: #000000;
+  letter-spacing: .2rem;
+  text-align: center;
+  align-items: center;
+}
+button:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+input{
+  background-color: hsl(0, 0%, 91%);
+}
+
+label{
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+
+}
+
+form{
+  border-color: #2FDB4E;
   letter-spacing: .2rem;
   text-align: center;
   border-style: dotted;
+  align-items: center;
 }
 
 .content {
