@@ -1,7 +1,7 @@
 import logo from './logo.png';
 import './index.css';
 import Home from './Home';
-import Scores from './Scores';
+import Scores from './scores/Scores';
 import Form from './Form';
 
 function App() {

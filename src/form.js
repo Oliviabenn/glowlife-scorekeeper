@@ -11,6 +11,8 @@ class Form extends Component {
 
 //TODO: Redirect to a score page after the user submits the homepage form
 
+//TODO: Store in database
+
     Checking(event) {
         event.preventDefault();
         if (this.state.username === "" || this.state.eventid === "") {
@@ -69,5 +71,3 @@ render(){
 }
 
 export default Form;
-
-//TODO: Store in database

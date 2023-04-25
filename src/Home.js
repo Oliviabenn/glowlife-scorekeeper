@@ -10,5 +10,6 @@ const Home = () =>{
 export default Home;
 
 //TODO: Create a form for inputting the event ID and user nickname.
+
 // Redirect to a score page after the user submits the homepage form.
 
