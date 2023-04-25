@@ -9,7 +9,26 @@ class Form extends Component {
         }
     }
 
-    handleNameEntry = (event) => {
+//TODO: Redirect to a score page after the user submits the homepage form
+
+    Checking(event) {
+        event.preventDefault();
+        if (this.state.username === "" || this.state.eventid === "") {
+          alert("Fields are required");
+          return;
+        }
+        if (this.state.username == "somename" && this.state.eventid === "1234") {
+          this.props.history.push('./scores.js')
+          return;
+        }else{
+          alert("Login Failed ! . Check Username and Password.")
+        }
+         
+        console.log(`${this.state.username}`)
+    }
+
+
+    handleName = (event) => {
         this.setState({
             username: event.target.value
 
@@ -19,16 +38,18 @@ class Form extends Component {
 
     handleEventID = (event) => {
         this.setState({
-            username: event.target.value
+            eventid: event.target.value
         }
      )
     }
 
     handleSubmit = event => {
-        alert('${this.state.username} ${this.state.eventid}')
+        alert('Thank you for your submission. You will be redirected to the main page.')
+        // alert('${this.state.username} ${this.state.eventid}')
     }
 
-    render(){
+
+render(){
         return(
             <form onSubmit={this.handleSubmit}>
                 <div>
@@ -38,7 +59,7 @@ class Form extends Component {
 
                     <label>Player Name:</label>
                     <input type ="text" value = {this.state.username}
-                    onChange = {this.handleNameEntry} />
+                    onChange = {this.handleName} />
                 </div>
 
                 <button type="submit">Submit</button>
@@ -47,4 +68,6 @@ class Form extends Component {
     }
 }
 
-export default Form
+export default Form;
+
+//TODO: Store in database
