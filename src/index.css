@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-  color: hsl(0, 0%, 100%);
+  color:#000000;
 
 }
 
@@ -44,16 +44,21 @@ h1 {
 
 button {
   border-width: 3px;
-  border-color: #F2F047;
-  color:#F2F047;
+  border-color: #cbf54c;
+  color:#cbf54c;
   background-color: #000000;
   letter-spacing: .2rem;
   text-align: center;
   align-items: center;
+  cursor: pointer;
 }
+
 button:hover{
-  color: hsl(0, 0%, 100%);
+  color:#000000;
+  background-color: hsl(0, 0%, 91%);
+  border-color: #000000;
 }
+
 
 input{
   background-color: hsl(0, 0%, 91%);
@@ -88,7 +93,7 @@ form{
 
 .scoreboard__name{
   font-size: 2.5em;
-  color: #f2f047;
+  color: #cbf54c;
   padding: 10px;
   text-align: center;
 
@@ -99,6 +104,7 @@ form{
   color: #ffffff;
   padding: 10px;
   text-align: center;
+  border: dotted;
 
 }
 
@@ -111,9 +117,12 @@ form{
   font-size: 3em;
   border: outset ;
   border-color: #2FDB4E;
-  background: rgba(0, 0, 0, 0.35);
   color: #2FDB4E;
-  
-
-
+  background: rgba(0, 0, 0, 30%);
+  cursor: pointer;
 }
+
+.scoreboard__control-button:active {
+  background: #2FDB4E;
+} 
+

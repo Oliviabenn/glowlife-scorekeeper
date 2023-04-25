@@ -1,7 +1,7 @@
 import logo from './logo.png';
 import './index.css';
 import Home from './Home';
-import Scores from './scores/Scores';
+import Scores from './scores/Scores.js';
 import Form from './Form';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Home/>
           <Form/>
 
-          <Scores/>
+        <Scores/>
 
         <div className="web-button">
           <button><a href={link}>GlowLife.com</a></button>
