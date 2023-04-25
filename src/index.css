@@ -95,7 +95,7 @@ form{
 }
 
 .scoreboard__score{
-  font-size: 4em;
+  font-size: 6em;
   color: #ffffff;
   padding: 10px;
   text-align: center;
@@ -104,6 +104,16 @@ form{
 
 .scoreboard__controls{
   display: flex;
-
 }
 
+.scoreboard__control-button {
+  flex-grow: 1;
+  font-size: 3em;
+  border: outset ;
+  border-color: #2FDB4E;
+  background: rgba(0, 0, 0, 0.35);
+  color: #2FDB4E;
+  
+
+
+}
