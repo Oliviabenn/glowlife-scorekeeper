@@ -15,7 +15,7 @@ There is no need to login or provide personal information. The application utili
 - This was placed due to a series of users requesting specific weather information during night golf events
 
 # Deployment
-This app is deployed via [Vercel](https://glowlife-scorekeeper.vercel.app/)
+This app is deployed via [Vercel](https://glowlife-scorekeeper.vercel.app/). It can also be accessed via [QR code](https://ibb.co/VmHJ177).
 
 # Style Guide
 [Updated mockups and design guidelines](https://drive.google.com/drive/folders/1oJgb6zn90-7_nZiNfIjGvQAqanA6TCe3?usp=share_link)
@@ -32,7 +32,7 @@ This app is deployed via [Vercel](https://glowlife-scorekeeper.vercel.app/)
 - Solves a meaningful problem for a business & its users
 - Stores data in MySQL, MongoDB, or other DB solution
 - Utilizes third party web API
-- Responsive on mobile, tablet, and desktop devices.
+- Responsive on mobile, tablet, and desktop devices
 - Includes a high-quality README.md file including:
 The purpose of the application and inspiration behind its creation, A breakdown of the technology used for the application, Instructions for contributing to the project 
 
