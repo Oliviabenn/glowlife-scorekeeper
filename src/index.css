@@ -45,6 +45,20 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+  color:#F2F047;
+  letter-spacing: .2rem;
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 button {
   border-width: 3px;
   border-color: #cbf54c;
@@ -75,7 +89,7 @@ label{
 
 form{
   border-color: #2FDB4E;
-  letter-spacing: .2rem;
+  letter-spacing: .3rem;
   text-align: center;
   border-style: dotted;
   align-items: center;
@@ -134,13 +148,15 @@ form{
 } 
 
 .weather-container{
-  width: 400px;
-  margin: 20px auto;
+  width: 100%;
+  margin: auto;
+  border: rgb(47, 219, 78, 50%);
+  border-style: dotted;
 }
 
 .weather-container h3{
   color: #cbf54c;
-  width: 300px;
+  width: 100%;
   font-size: 2em;
   display: flex;
 }
