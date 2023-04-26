@@ -26,10 +26,18 @@ router.post("/add-event", (req,res)=> {
      Event.find({name: req.body.name})
      .then((response)=> {
         if(response.length > 0){
-            res.json({
-                message: "Event name already exists"
+             if(response[0].eventId == req.body.eventId){
+             res.json({
+                message: "Existing user",
+                event: response[0]
             })
-            return;
+             }
+             else{
+                res.status(404).json({
+                    message: "Invalid eventId"
+                })
+                return;
+             }
         }
         else{
             const event= new Event({

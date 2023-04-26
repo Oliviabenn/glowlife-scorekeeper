@@ -9,6 +9,8 @@ function App() {
   const title = 'GlowLife Scorekeeper';
   const link = "http://www.glowlife.com"
 
+ 
+
 
   return (
     <div className="App">

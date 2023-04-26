@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
+import Weather from "../weather/Weather";
 
 const Scores = () =>{
     const [user, setUser]= useState({});
 
-    useEffect(()=> {
+ useEffect(()=> {
         const username= localStorage.getItem("USERNAME");
-
+      
         if(username){
         fetch(`http://localhost:3000/events/${username} `)
         .then(res=> res.json())
@@ -16,6 +17,7 @@ const Scores = () =>{
         .catch(err=> console.log(err))
     }
     }, []);
+
     
     let [score, setScore]= useState(0)
 
@@ -76,6 +78,8 @@ const Scores = () =>{
         </div>
 
         </div>
+
+        <Weather />
         </div>
             );
 

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () =>{
     const [eventId, setEventId]= useState(0);
     const [username, setUsername]= useState("");
+    const [city, setCity]= useState("");
 
     const navigate= useNavigate();
 
@@ -24,14 +25,17 @@ const Home = () =>{
         })
         .then(response=> response.json())
         .then(res=> {
-            if(res.message === "Event name already exists"){
-                alert("Username already chosen, please choose another username to proceed")
-                return;
-            }
-            else if(res.message === "Event created successfully"){
-               localStorage.setItem("USERNAME", username);
-               navigate("/scores")
-            }
+                if(res.message === "Invalid eventId"){
+                    alert("Invalid eventId")
+                    return;
+                }
+                else{
+                    localStorage.setItem("USERNAME", res.event.name);
+                    localStorage.setItem("CITY", city)
+
+                    navigate("/scores")
+                }
+         
         })
         .catch();
     }
@@ -50,6 +54,10 @@ const Home = () =>{
                     <label>Player Name:</label>
                     <input type ="text" value = {username}
                     onChange = {(e)=> setUsername(e.target.value)} />
+
+                    <label>City Name:</label>
+                    <input type ="text" value = {city}
+                    onChange = {(e)=> setCity(e.target.value)} />
                 </div>
 
                 <button type="submit">Submit</button>

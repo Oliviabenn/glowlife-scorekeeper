@@ -126,3 +126,6 @@ form{
   background: #2FDB4E;
 } 
 
+.weather-container h3{
+  color: #cbf54c;
+}
