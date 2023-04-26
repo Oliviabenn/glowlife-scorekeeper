@@ -17,7 +17,7 @@ router.post("/add-event", (req,res)=> {
      .then((response)=> {
         if(response.length > 0){
             res.json({
-                message: "Event name alreadys exists"
+                message: "Event name already exists"
             })
             return;
         }

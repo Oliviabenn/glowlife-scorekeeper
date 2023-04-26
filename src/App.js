@@ -2,7 +2,7 @@ import logo from './logo.png';
 import './index.css';
 import Home from './Home';
 import Scores from './scores/Scores.js';
-import Form from './Form';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   const title = 'GlowLife Scorekeeper';
@@ -12,15 +12,16 @@ function App() {
 
   return (
     <div className="App">
+      <Router>
       <div className="content">
 
-      <br/><br/>
+      {/* <br/><br/> */}
       <img src={logo} width={300} height={300} />
-
-        <Home/>
-          <Form/>
-
-        <Scores/>
+      <Routes>
+       <Route path="/" element={ <Home/>} />
+      <Route path="/scores" element={<Scores />}/>
+    
+      </Routes>
 
         <div className="web-button">
           <button><a href={link}>GlowLife.com</a></button>
@@ -28,6 +29,7 @@ function App() {
 
 
     </div>
+    </Router>
   </div>
   );
 }
