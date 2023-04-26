@@ -81,6 +81,7 @@ button:hover{
 
 
 input{
+  width: 75%;
   background-color: hsl(0, 0%, 91%);
 }
 
@@ -91,6 +92,8 @@ label{
 }
 
 form{
+  width: 100%;
+  margin: auto auto;
   border-color: #2FDB4E;
   letter-spacing: .3rem;
   text-align: center;
@@ -100,6 +103,8 @@ form{
 
 .submit{
   width: 45%;
+  font-size: 1.5em;
+  letter-spacing: .15em;
 }
 
 .content {
@@ -181,11 +186,44 @@ form{
   display: flex;
 }
 
-.web-button{
+.web-button {
   text-align: center;
 }
 
-.web-button button{
+.web-button button {
   width: 60%;
   font-size: 1.5em;;
+}
+
+.logo img {
+  margin: auto;
+}
+
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 767px) {
+  .content {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .scoreboard {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .weather-container {
+    width: 100%;
+  }
+
+  .weather-container h3 {
+    width: auto;
+  }
+
+  .submit {
+    width: 100%;
+  }
+
+  .web-button button {
+    width: 100%;
+  }
 }
