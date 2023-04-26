@@ -3,10 +3,10 @@ import './index.css';
 import Home from './Home';
 import Scores from './scores/Scores.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function App() {
-  const title = 'GlowLife Scorekeeper';
+  // const title = 'GlowLife Scorekeeper';
   const link = "http://www.glowlife.com"
 
   return (
@@ -14,7 +14,7 @@ function App() {
       <Router>
       <div className="content">
 
-      <p class="logo"><img src={logo} width={300} height={300} /> </p>
+      <p class="logo"><img src={logo} width={300} height={300} alt='GlowLife Logo' /> </p>
       <Routes>
        <Route path="/" element={ <Home />} />
       <Route path="/scores" element={<Scores/>}/>

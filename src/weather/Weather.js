@@ -30,7 +30,7 @@ const Weather=()=> {
             <h2>Current conditions</h2>
             <div>
                  <h3>Temp: {data?.main?.temp}°F</h3>
-                 <img src="./images/weather_logo2.png" width={100} height={100}/>
+                 <img src="./images/weather_logo2.png" width={100} height={100} alt='weather logo'/>
                  <h3>Wind: {data?.wind?.speed} mph</h3>
             </div>
         </div>
