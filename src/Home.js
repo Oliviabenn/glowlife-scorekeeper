@@ -33,6 +33,8 @@ const Home = () =>{
                     localStorage.setItem("USERNAME", res.event.name);
                     localStorage.setItem("CITY", city)
 
+//TODO: Redirect to score page after the user submits the homepage form.
+
                     navigate("/scores")
                 }
          
@@ -40,6 +42,7 @@ const Home = () =>{
         .catch();
     }
 
+//TODO: Create a form for inputting the event ID and user nickname.
 
     return (
         <div className="home">
@@ -48,7 +51,7 @@ const Home = () =>{
             <form onSubmit={handleSubmit}>
                 <div>
                     <p>
-                    <label>Event ID #:</label>
+                    <label>Group #:</label>
                     <input type ="text" value = {eventId}
                     onChange = {(e)=> setEventId(e.target.value)}/>
                     </p>
@@ -58,7 +61,7 @@ const Home = () =>{
                     onChange = {(e)=> setUsername(e.target.value)} />
                   </p>
                   <p>
-                    <label>City Name:</label>
+                    <label>City:</label>
                     <input type ="text" value = {city}
                     onChange = {(e)=> setCity(e.target.value)} />
                 </p>
@@ -72,8 +75,4 @@ const Home = () =>{
 }
 
 export default Home;
-
-//TODO: Create a form for inputting the event ID and user nickname.
-
-// Redirect to a score page after the user submits the homepage form.
 

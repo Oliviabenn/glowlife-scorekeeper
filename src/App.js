@@ -26,7 +26,7 @@ function App() {
       </Routes>
 
         <div className="web-button">
-          <button><a href={link}>GlowLife.com</a></button>
+          <button><a href={link}>Visit GlowLife.com</a></button>
           </div>
 
 

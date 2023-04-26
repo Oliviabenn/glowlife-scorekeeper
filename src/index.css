@@ -80,9 +80,11 @@ form{
   border-style: dotted;
   align-items: center;
 }
+
 .submit{
   width: 45%;
 }
+
 .content {
   max-width: 600px;
   margin: 40px auto;
@@ -130,20 +132,28 @@ form{
 .scoreboard__control-button:active {
   background: #2FDB4E;
 } 
+
 .weather-container{
   width: 400px;
   margin: 20px auto;
 }
+
 .weather-container h3{
   color: #cbf54c;
-  width: 130px;
+  width: 300px;
+  font-size: 2em;
+  display: flex;
 }
+
 .weather-container div{
   display: flex;
 }
+
 .web-button{
   text-align: center;
 }
+
 .web-button button{
-  width: 50%;
+  width: 60%;
+  font-size: 1.5em;;
 }

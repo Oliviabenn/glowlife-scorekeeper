@@ -18,7 +18,8 @@ const Scores = () =>{
     }
     }, []);
 
-    
+ //TODO: Display user's current score 
+
     let [score, setScore]= useState(0)
 
 
@@ -65,7 +66,7 @@ const Scores = () =>{
     {/* Name, score */}
 
         <div className = "scoreboard">
-            <div className = "scoreboard__name">Event Id: {user.eventId}</div>
+            <div className = "scoreboard__name">Group #: {user.eventId}</div>
             <div className = "scoreboard__name">Player Name: {user.name}</div>
             <div className = "scoreboard__score">{ score }</div>
 
@@ -93,6 +94,4 @@ export default Scores;
 
 //TODO: Page displays the event id and username.
 
-//TODO: Display user's current score and the weather information (API).
 
-//TODO: Make an API call to modify the score number and reload the page each time the user presses the +/- button.
