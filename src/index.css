@@ -7,6 +7,7 @@
   padding: 1rem;
   align-items: center;
 }
+
 .logo{
   text-align: center;
 }
@@ -224,6 +225,11 @@ form{
   }
 
   .web-button button {
+    width: 100%;
+  }
+
+  .logo{
+    text-align: center;
     width: 100%;
   }
 }
