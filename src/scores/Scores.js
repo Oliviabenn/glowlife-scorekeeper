@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Weather from "../weather/Weather";
 
+// Page displays the event id, score, & username
+
 const Scores = () =>{
     const [user, setUser]= useState({});
 
@@ -18,7 +20,7 @@ const Scores = () =>{
     }
     }, []);
 
- //TODO: Display user's current score 
+ // Display user's current score 
 
     let [score, setScore]= useState(0)
 
@@ -90,8 +92,8 @@ const Scores = () =>{
 
 export default Scores;
 
-//TODO: Redirect to score page after the user submits the homepage form.
+// Redirect to score page after the user submits the homepage form.
 
-//TODO: Page displays the event id and username.
+
 
 

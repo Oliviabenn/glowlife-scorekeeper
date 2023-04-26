@@ -1,6 +1,7 @@
 const mongoose= require("mongoose");
 
-//Have a table for events 
+// Schema maps to a MongoDB collection
+// defines the shape of the documents within that collection.
 
 const eventSchema= mongoose.Schema({
     eventId: {
@@ -20,3 +21,5 @@ const eventSchema= mongoose.Schema({
 
 
 module.exports= mongoose.model("EVENTS", eventSchema);
+
+// If you want to add additional keys later, use Schema#add method.

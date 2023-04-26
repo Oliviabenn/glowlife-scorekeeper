@@ -11,6 +11,9 @@ router.get("/events", (req, res)=> {
     .catch(err=> console.log(err)); 
 })
 
+// Find user
+// Status codes for my own ref
+
 router.get("/events/:username", (req, res)=> {
     Event.find({name: req.params.username})
     .then(response=> {
@@ -32,6 +35,7 @@ router.post("/add-event", (req,res)=> {
                 event: response[0]
             })
              }
+// Invalid group #
              else{
                 res.status(404).json({
                     message: "Invalid eventId"
@@ -45,6 +49,7 @@ router.post("/add-event", (req,res)=> {
                 name: req.body.name
             })
 
+// Event created successfully
             event.save()
             .then(response=> {
                 res.status(201).json({
@@ -71,6 +76,7 @@ router.post("/add-event", (req,res)=> {
     })
 })
 
+// Update score +/- point
 
 router.patch("/score", (req, res)=> {
     Event.find({name: req.body.name})
@@ -102,4 +108,4 @@ router.patch("/score", (req, res)=> {
 })
 
 
-module.exports= router;
+module.exports = router;

@@ -23,7 +23,7 @@ This app is deployed via [Vercel](https://glowlife-scorekeeper.vercel.app/)
 
 # References, Materials
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-- In addition to available lectures and course materials (via Canvas), a series of [YouTube videos](yt references link) were referenced when setting up the database and having the scores/names stored.
+- In addition to available lectures and course materials (via Canvas), a series of [external references](https://www.canva.com/design/DAFhOjPlRl8/6bT43fcGmaCFF3vcmHBM0g/edit?utm_content=DAFhOjPlRl8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) were used when setting up the database and having the scores/names stored.
 
 -- 
 # Project Requirements
