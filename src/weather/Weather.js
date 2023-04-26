@@ -29,7 +29,7 @@ const Weather=()=> {
         <div className="weather-container">
             <h1>Current conditions:</h1>
             <div>
-                 <h3>{data?.main?.temp}°F</h3>
+                 <h3>Temp:{data?.main?.temp}°F</h3>
                  <img src="./images/weather_logo.png"/>
                  <h3>Wind: {data?.wind?.speed} mph</h3>
             </div>
