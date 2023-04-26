@@ -1,5 +1,28 @@
-const Scores = () =>{
+import { useEffect, useState } from "react";
 
+const Scores = ({eventId, username}) =>{
+    const [user, setUser]= useState({});
+
+    useEffect(()=> {
+        const username= localStorage.getItem("USERNAME");
+
+        fetch(`http://localhost:3000/events/${username} `)
+        .then(response=> {
+            setUser(response.user)
+        })
+        .catch(err=> console.log(err))
+    }, []);
+    
+    const [score, setScore]= useState(0)
+
+
+    const increment=()=> {
+        setScore(score + 1)
+    }
+
+    const decrement=()=> {
+        setScore(score - 1)
+    }
     
 
     return (
@@ -9,14 +32,15 @@ const Scores = () =>{
 
     {/* Name, score */}
 
-        <div class = "scoreboard">
-            <div class = "scoreboard__name">Player Name:</div>
-            <div class = "scoreboard__score">0</div>
+        <div className = "scoreboard">
+            <div className = "scoreboard__name">Event Id: {user.eventId}</div>
+            <div className = "scoreboard__name">Player Name: {user.name}</div>
+            <div className = "scoreboard__score">{user.point ? user.point : score}</div>
 
     {/* button, controls  */}
-            <div class = "scoreboard__controls">
-                    <button class =  "scoreboard__control-button">-</button>
-                    <button class =  "scoreboard__control-button">+</button>
+            <div className = "scoreboard__controls">
+                    <button className =  "scoreboard__control-button" onClick={decrement}>-</button>
+                    <button className =  "scoreboard__control-button" onClick={increment}>+</button>
 
             </div>
         </div>

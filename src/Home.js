@@ -1,11 +1,16 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Home = () =>{
-    const [eventId, setEventId]= useState(null);
+const Home = ({getData}) =>{
+    const [eventId, setEventId]= useState(0);
     const [username, setUsername]= useState("");
+
+    const navigate= useNavigate();
 
     const handleSubmit=(e)=> {
         e.preventDefault();
+
+        console.log(eventId, username)
 
         fetch("http://localhost:3000/add-event", {
             method: "POST",
@@ -24,7 +29,9 @@ const Home = () =>{
                 return;
             }
             else if(res.message === "Event created successfully"){
-                
+               getData(eventId, username);
+               localStorage.setItem("USERNAME", username);
+               navigate("/scores")
             }
         })
         .catch();

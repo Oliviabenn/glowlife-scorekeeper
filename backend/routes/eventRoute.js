@@ -11,6 +11,16 @@ router.get("/events", (req, res)=> {
     .catch(err=> console.log(err)); 
 })
 
+router.get("/events/:username", (req, res)=> {
+    Event.find({name: req.params.username})
+    .then(response=> {
+        res.status(200).json({
+            message: "user found successfully", 
+            user: response[0]
+        })
+    })
+})
+
 
 router.post("/add-event", (req,res)=> {
      Event.find({name: req.body.name})
