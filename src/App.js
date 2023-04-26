@@ -8,15 +8,7 @@ import { useState } from 'react';
 function App() {
   const title = 'GlowLife Scorekeeper';
   const link = "http://www.glowlife.com"
-  
-  const [id, setId]= useState(0);
-  const [username, setUsername]= useState("");
 
-
-  const getData=(id, name)=> {
-        setId(id);
-        setUsername(name);
-  }
 
   return (
     <div className="App">
@@ -26,8 +18,8 @@ function App() {
       {/* <br/><br/> */}
       <img src={logo} width={300} height={300} />
       <Routes>
-       <Route path="/" element={ <Home getData={getData}/>} />
-      <Route path="/scores" element={<Scores eventId={id} username={username}/>}/>
+       <Route path="/" element={ <Home />} />
+      <Route path="/scores" element={<Scores/>}/>
     
       </Routes>
 

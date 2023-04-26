@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Home = ({getData}) =>{
+const Home = () =>{
     const [eventId, setEventId]= useState(0);
     const [username, setUsername]= useState("");
 
@@ -29,7 +29,6 @@ const Home = ({getData}) =>{
                 return;
             }
             else if(res.message === "Event created successfully"){
-               getData(eventId, username);
                localStorage.setItem("USERNAME", username);
                navigate("/scores")
             }
