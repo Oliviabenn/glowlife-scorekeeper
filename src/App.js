@@ -9,15 +9,11 @@ function App() {
   const title = 'GlowLife Scorekeeper';
   const link = "http://www.glowlife.com"
 
- 
-
-
   return (
     <div className="App">
       <Router>
       <div className="content">
 
-      {/* <br/><br/> */}
       <p class="logo"><img src={logo} width={300} height={300} /> </p>
       <Routes>
        <Route path="/" element={ <Home />} />

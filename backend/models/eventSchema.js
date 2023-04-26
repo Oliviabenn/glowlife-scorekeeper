@@ -1,5 +1,7 @@
 const mongoose= require("mongoose");
 
+//Have a table for events 
+
 const eventSchema= mongoose.Schema({
     eventId: {
         type: Number,

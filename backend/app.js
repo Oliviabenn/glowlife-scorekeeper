@@ -12,6 +12,7 @@ app.use(express.urlencoded({
 }));
 app.use(cors());
 
+//MongoDB test.events
 
 const connection= mongoose.connect('mongodb+srv://obennington97:testpass1@cluster0.czstnth.mongodb.net/?retryWrites=true&w=majority')
 if(connection){
