@@ -7,6 +7,9 @@
   padding: 1rem;
   align-items: center;
 }
+.logo{
+  text-align: center;
+}
 
 img {
   padding: 3rem;
@@ -77,7 +80,9 @@ form{
   border-style: dotted;
   align-items: center;
 }
-
+.submit{
+  width: 45%;
+}
 .content {
   max-width: 600px;
   margin: 40px auto;
@@ -88,7 +93,7 @@ form{
   display: grid;
   grid-template-columns: 1 fr 1 fr;
   width: 300px;
-
+  margin: 20px auto;
 }
 
 .scoreboard__name{
@@ -125,7 +130,20 @@ form{
 .scoreboard__control-button:active {
   background: #2FDB4E;
 } 
-
+.weather-container{
+  width: 400px;
+  margin: 20px auto;
+}
 .weather-container h3{
   color: #cbf54c;
+  width: 130px;
+}
+.weather-container div{
+  display: flex;
+}
+.web-button{
+  text-align: center;
+}
+.web-button button{
+  width: 50%;
 }

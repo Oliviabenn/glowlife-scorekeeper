@@ -7,16 +7,7 @@ const Weather=()=> {
     useEffect(()=> {
 
         const city= localStorage.getItem("CITY");
-       
-// const options = {
-//     method: 'GET',
-//     url: 'https://open-weather13.p.rapidapi.com/city/landon',
-//     headers: {
-//       'content-type': 'application/octet-stream',
-//       'X-RapidAPI-Key': '6fafba1395mshf523ed95a73ef73p1907f8jsne5b5c9a9e11a',
-//       'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
-//     }
-//   };
+
 
     fetch(`https://open-weather13.p.rapidapi.com/city/${city}`, {
         headers: {
@@ -25,19 +16,13 @@ const Weather=()=> {
             'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
           }
     })
-    
+
     .then(res=> res.json())
     .then(res=> {
         console.log(res)
         setData(res);
     })
   
-//   try {
-//       const response = await axios.request(options);
-//       console.log(response.data);
-//   } catch (error) {
-//       console.error(error);
-//   }
     }, [])
 
     return(

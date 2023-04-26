@@ -18,7 +18,7 @@ function App() {
       <div className="content">
 
       {/* <br/><br/> */}
-      <img src={logo} width={300} height={300} />
+      <p class="logo"><img src={logo} width={300} height={300} /> </p>
       <Routes>
        <Route path="/" element={ <Home />} />
       <Route path="/scores" element={<Scores/>}/>

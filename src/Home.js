@@ -47,20 +47,24 @@ const Home = () =>{
 
             <form onSubmit={handleSubmit}>
                 <div>
+                    <p>
                     <label>Event ID #:</label>
                     <input type ="text" value = {eventId}
                     onChange = {(e)=> setEventId(e.target.value)}/>
-
+                    </p>
+                   <p>
                     <label>Player Name:</label>
                     <input type ="text" value = {username}
                     onChange = {(e)=> setUsername(e.target.value)} />
-
+                  </p>
+                  <p>
                     <label>City Name:</label>
                     <input type ="text" value = {city}
                     onChange = {(e)=> setCity(e.target.value)} />
+                </p>
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="submit">Submit</button>
             </form>            
         </div>
 
