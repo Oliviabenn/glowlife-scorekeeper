@@ -22,6 +22,8 @@ body{
 }
 
 a {
+  width: 100%;
+  margin: auto;
   text-decoration: none;
   align-items: center;
   color:#F2F047;
@@ -35,6 +37,7 @@ a:hover {
 
 h1 {
   color:#F2F047;
+  letter-spacing: .2rem;
   text-align: center;
   display: block;
     font-size: 2em;
@@ -108,8 +111,8 @@ form{
 .scoreboard {
   display: grid;
   grid-template-columns: 1 fr 1 fr;
-  width: 300px;
-  margin: 20px auto;
+  width: 100%;
+  margin: auto;
 }
 
 .scoreboard__name{
@@ -152,16 +155,29 @@ form{
   margin: auto;
   border: rgb(47, 219, 78, 50%);
   border-style: dotted;
+  /* display: flex; */
+
 }
 
 .weather-container h3{
-  color: #cbf54c;
   width: 100%;
+  margin: auto;
+  color: #ffffff;
   font-size: 2em;
-  display: flex;
+  letter-spacing: .3rem;
+
+  /* display: flex; */
 }
 
 .weather-container div{
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.weather-container img{
+  width: 70%;
+  margin: auto;
   display: flex;
 }
 
