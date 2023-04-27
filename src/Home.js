@@ -34,10 +34,8 @@ const Home = () =>{
                 }
                 else{
                     localStorage.setItem("USERNAME", res.event.name);
-                  
                     localStorage.setItem("CITY", city)
-                    alert("signed in successfully")
-                    // navigate(303, "/scores")
+                    navigate("/scores")
                 }
          
         })
