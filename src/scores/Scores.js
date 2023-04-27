@@ -71,7 +71,7 @@ const Scores = () =>{
     {/* Name, score */}
 
         <div className = "scoreboard">
-            <div className = "scoreboard__name">Group #: {user.eventId}</div>
+            <div className = "scoreboard__name">Event ID #: {user.eventId}</div>
             <div className = "scoreboard__name">Player Name: {user.name}</div>
             <div className = "scoreboard__score">{ score }</div>
 

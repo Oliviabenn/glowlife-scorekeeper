@@ -46,12 +46,12 @@ const Home = () =>{
 
     return (
         <div className="home">
-            <h1>Enter your name and event ID # to start playing!</h1>
+            <h1>Enter your event ID #, name, and city to start playing!</h1>
 
             <form onSubmit={handleSubmit}>
                 <div>
                     <p>
-                    <label>Group #:</label>
+                    <label>Event ID #:</label>
                     <input type ="text" value = {eventId}
                     onChange = {(e)=> setEventId(e.target.value)}/>
                     </p>

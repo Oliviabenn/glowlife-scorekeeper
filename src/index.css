@@ -13,7 +13,7 @@
 }
 
 img {
-  /* width: 100%; */
+  padding: 30%; 
   text-align: center;
 }
 
@@ -246,13 +246,9 @@ form{
     width: 100%;
   }
 
-  .logo p{
-    width: 100%;
+  img {
+    padding: 30%; 
     text-align: center;
+  }
   
-  }
-
-  .content logo{
-
-  }
 }
