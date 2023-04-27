@@ -24,6 +24,9 @@ This app is deployed via [Vercel](https://glow-golf-score-one.vercel.app/). It c
 # Style Guide
 [Updated mockups and design guidelines](https://drive.google.com/drive/folders/1oJgb6zn90-7_nZiNfIjGvQAqanA6TCe3?usp=share_link)
 
+[FONT_COLORS_LOGO.pdf](https://github.com/Oliviabenn/glowlife-scorekeeper/files/11347156/FONT_COLORS_LOGO.pdf)
+
+
 
 # References, Materials
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
