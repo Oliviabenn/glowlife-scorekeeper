@@ -12,7 +12,7 @@ const Scores = () =>{
         const username= localStorage.getItem("USERNAME");
       
         if(username){
-        fetch(`http://localhost:3000/api/events/${username} `)
+        fetch(`/api/events/${username} `)
         .then(res=> res.json())
         .then(response=> {
             setUser(response.user)
@@ -48,7 +48,7 @@ const Scores = () =>{
             score -= 1
         }
 
-        fetch("http://localhost:3000/api/score", {
+        fetch("/api/score", {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

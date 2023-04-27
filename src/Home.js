@@ -16,7 +16,7 @@ const Home = () =>{
 
         console.log(eventId, username)
 
-        fetch("http://localhost:3000/api/add-event", {
+        fetch("/api/add-event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
