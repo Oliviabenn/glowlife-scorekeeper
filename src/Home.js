@@ -40,7 +40,7 @@ const Home = () =>{
                 }
          
         })
-        .catch();
+        .catch(err=> console.log(err));
     }
 
 //TODO: Create a form for inputting the event ID and user nickname.
