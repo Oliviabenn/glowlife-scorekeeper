@@ -20,6 +20,10 @@ if(connection){
     console.log("DB CONNECTED");
 }
 
+app.get("/", (req, res)=> {
+res.send("App is running!");
+});
+
 app.use("/api/", eventRoute);
 
 app.listen(3000, ()=> {
