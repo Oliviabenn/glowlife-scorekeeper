@@ -13,7 +13,7 @@ const Home = () =>{
 
         console.log(eventId, username)
 
-        fetch("https://api.vercel.com/add-event", {
+        fetch("https://glowlife-scorekeeper.vercel.app/add-event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -23,7 +23,7 @@ const Home = () =>{
                 name: username
             })
         })
-        
+
         .then(response=> response.json())
         .then(res=> {
                 if(res.message === "Invalid eventId"){
