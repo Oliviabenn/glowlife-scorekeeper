@@ -5,7 +5,7 @@ This application is for participants of the [GlowLife Night Golf Events](https:/
 The user begins by inputting their name, group number, and location into the form on the home page. This information is stored and the page will redirect to a score page. The score page features a counter that starts at 0 with buttons to add or subtract points. The subtraction method was added as sometimes players mistakenly believe to have hit a target, but it does not count as a "confirmed" contact unless the target plays its sound and animation. If the shot is successful, the player will add a single point. There is also the option to create targets with higher point value i.e. a 5 point target that would yield a +5 point addition.
 
 # Storing Data
-There is no need to login or provide personal information. The application utilizes database solution [MongoDB Atlas](https://www.mongodb.com/atlas/database) to store the [group number, player name, and current points](https://ibb.co/285dG5p) -- this information is entered into the form on the home page. Scores will not reset on refresh and users can revisit their scores by entering their previously used group number and name. 
+There is no need to login or provide personal information. The application utilizes database solution [MongoDB Atlas](https://www.mongodb.com/atlas/database) to store the [group number, player name, and current points](https://ibb.co/285dG5p) -- this information is entered into the form on the home page. Scores will not reset on refresh and users can revisit their scores by entering their previously used event number and name. 
 
 # Weather
 - About [Open Weather](https://rapidapi.com/worldapi/api/open-weather13/), Via worldapi:
