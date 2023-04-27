@@ -35,7 +35,7 @@ const Home = () =>{
                 else{
                     localStorage.setItem("USERNAME", res.event.name);
                     localStorage.setItem("CITY", city)
-                    navigate("/scores")
+                    navigate(303, "/scores")
                 }
          
         })
