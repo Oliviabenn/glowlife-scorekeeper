@@ -15,7 +15,7 @@ const Home = () =>{
     const handleSubmit=(e)=> {
         e.preventDefault();
 
-        fetch("/api/add-event", {
+        fetch("http://localhost:3000/api/add-event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -26,7 +26,6 @@ const Home = () =>{
                 name: username
             })
         })
-
         .then(response=> response.json())
         .then(res=> {
                 if(res.message === "Invalid eventId"){

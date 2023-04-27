@@ -1,6 +1,5 @@
 {
   "name": "glowlife-scorekeeper",
-  "proxy": "http://glowlife-score.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
