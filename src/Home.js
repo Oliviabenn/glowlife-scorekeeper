@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const scores = "C:\Users\olivi\OneDrive\Desktop\MMC6145\MODULE7\glowlife-scorekeeper\src\scores\Scores.js"
 
 //TODO: Redirect to score page after the user submits the homepage form.
 
@@ -69,7 +68,7 @@ const Home = () =>{
                 </p>
                 </div>
 
-                <button type="submit" class="submit"><a href={scores}>Submit</a></button>
+                <button type="submit" class="submit">Submit</button>
             </form>            
         </div>
 
