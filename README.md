@@ -11,6 +11,8 @@ There is no need to login or provide personal information. The application utili
 
 # Environmental Variables
 - MONGOURI= mongodb+srv://obennington97:testpass1@cluster0.czstnth.mongodb.net/?retryWrites=true&w=majority
+[Frontend repo](https://github.com/Oliviabenn/frontend.git)
+[Backend repo](https://github.com/Oliviabenn/backend.git)
 
 # Weather
 - About [Open Weather](https://rapidapi.com/worldapi/api/open-weather13/), Via worldapi:
