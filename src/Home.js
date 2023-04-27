@@ -15,7 +15,7 @@ const Home = () =>{
     const handleSubmit=(e)=> {
         e.preventDefault();
 
-        fetch("http://localhost:3000/api/add-event", {
+        fetch("/api/add-event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
