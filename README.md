@@ -3,13 +3,14 @@ This application is for participants of the [GlowLife Night Golf Events](https:/
 
 ![GLOW_EVENT_EXAMPLE](https://user-images.githubusercontent.com/77904773/234967205-da04aa08-c45e-4246-ad64-c969cbc6fd77.png)
 
-
 # How it Works
 The user begins by inputting their name, group number, and location into the form on the home page. This information is stored and the page will redirect to a score page. The score page features a counter that starts at 0 with buttons to add or subtract points. The subtraction method was added as sometimes players mistakenly believe to have hit a target, but it does not count as a "confirmed" contact unless the target plays its sound and animation. If the shot is successful, the player will add a single point. There is also the option to create targets with higher point value i.e. a 5 point target that would yield a +5 point addition.
 
-
 # Storing Data
 There is no need to login or provide personal information. The application utilizes database solution [MongoDB Atlas](https://www.mongodb.com/atlas/database) to store the [group number, player name, and current points](https://ibb.co/285dG5p) -- this information is entered into the form on the home page. Scores will not reset on refresh and users can revisit their scores by entering their previously used event number and name. 
+
+# Environmental Variables
+- MONGOURI= mongodb+srv://obennington97:testpass1@cluster0.czstnth.mongodb.net/?retryWrites=true&w=majority
 
 # Weather
 - About [Open Weather](https://rapidapi.com/worldapi/api/open-weather13/), Via worldapi:
@@ -22,15 +23,17 @@ There is no need to login or provide personal information. The application utili
 This app is deployed via [Vercel](https://glow-golf-score-one.vercel.app/). It can also be accessed via [QR code](https://www.dropbox.com/s/t2rz658uur648xd/glowlife_app_qr.png?dl=0).
 
 # Style Guide
-[Updated mockups and design guidelines](https://drive.google.com/drive/folders/1oJgb6zn90-7_nZiNfIjGvQAqanA6TCe3?usp=share_link)
+[Newest versions of mockups and design guidelines](https://drive.google.com/drive/folders/1oJgb6zn90-7_nZiNfIjGvQAqanA6TCe3?usp=share_link)
 ![style_updated](https://user-images.githubusercontent.com/77904773/234968366-0d6a53b8-2c27-49e9-9c56-d5233ad06224.png)
 
+# Mockups
 
+![GlowLife_Scorekeeper_Home](https://user-images.githubusercontent.com/77904773/234969211-d73d0de1-360a-4969-94a2-9ffe84a1f53f.png)
+![GlowLife_Scorekeeper_score](https://user-images.githubusercontent.com/77904773/234969215-ac76734f-2367-44f6-a768-29a9f04d7e01.png)
 
 # References, Materials
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - In addition to available lectures and course materials (via Canvas), a series of [external references](https://www.canva.com/design/DAFhOjPlRl8/6bT43fcGmaCFF3vcmHBM0g/edit?utm_content=DAFhOjPlRl8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) were used when setting up the database and having the scores/names stored.
-
 
 # Project Requirements
 (via Canva)
