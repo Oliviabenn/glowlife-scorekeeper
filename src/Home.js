@@ -16,7 +16,7 @@ const Home = () =>{
 
         console.log(eventId, username)
 
-        fetch("https://glowlife-scorekeeper.vercel.app/api/add-event", {
+        fetch("/api/add-event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
