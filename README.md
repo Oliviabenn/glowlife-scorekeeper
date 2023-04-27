@@ -26,11 +26,6 @@ This app is deployed via [Vercel](https://glow-golf-score-one.vercel.app/). It c
 [Newest versions of mockups and design guidelines](https://drive.google.com/drive/folders/1oJgb6zn90-7_nZiNfIjGvQAqanA6TCe3?usp=share_link)
 ![style_updated](https://user-images.githubusercontent.com/77904773/234968366-0d6a53b8-2c27-49e9-9c56-d5233ad06224.png)
 
-# Mockups
-
-![GlowLife_Scorekeeper_Home](https://user-images.githubusercontent.com/77904773/234969211-d73d0de1-360a-4969-94a2-9ffe84a1f53f.png)
-![GlowLife_Scorekeeper_score](https://user-images.githubusercontent.com/77904773/234969215-ac76734f-2367-44f6-a768-29a9f04d7e01.png)
-
 # References, Materials
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - In addition to available lectures and course materials (via Canvas), a series of [external references](https://www.canva.com/design/DAFhOjPlRl8/6bT43fcGmaCFF3vcmHBM0g/edit?utm_content=DAFhOjPlRl8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) were used when setting up the database and having the scores/names stored.
