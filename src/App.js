@@ -14,7 +14,7 @@ function App() {
       <Router>
       <div className="content">
 
-      <p class="logo"><img src={logo} width={300} height={300} alt='GlowLife Logo' /> </p>
+      <p className="logo"><img src={logo} width={300} height={300} alt='GlowLife Logo' /> </p>
       <Routes>
        <Route path="/" element={ <Home />} />
       <Route path="/scores" element={<Scores/>}/>

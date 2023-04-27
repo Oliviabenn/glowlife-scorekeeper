@@ -16,7 +16,7 @@ const Home = () =>{
 
         console.log(eventId, username)
 
-        fetch("/api/add-event", {
+        fetch("http://localhost:3000/api/add-event", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -68,7 +68,7 @@ const Home = () =>{
                 </p>
                 </div>
 
-                <button type="submit" class="submit">Submit</button>
+                <button type="submit" className="submit">Submit</button>
             </form>            
         </div>
 

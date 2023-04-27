@@ -2,6 +2,7 @@ const express= require("express");
 const mongoose= require("mongoose");
 const eventRoute= require("./routes/eventRoute");
 const cors= require("cors");
+require('dotenv').config();
 
 
 const app= express();
@@ -14,7 +15,7 @@ app.use(cors());
 
 //MongoDB test.events
 
-const connection= mongoose.connect('mongodb+srv://obennington97:testpass1@cluster0.czstnth.mongodb.net/?retryWrites=true&w=majority')
+const connection= mongoose.connect(process.env.MONGOURI);
 if(connection){
     console.log("DB CONNECTED");
 }
