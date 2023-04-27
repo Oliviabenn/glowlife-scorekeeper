@@ -26,7 +26,6 @@ const Home = () =>{
                 name: username
             })
         })
-
         .then(response=> response.json())
         .then(res=> {
                 if(res.message === "Invalid eventId"){
