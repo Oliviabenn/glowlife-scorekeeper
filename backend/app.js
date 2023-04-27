@@ -19,7 +19,7 @@ if(connection){
     console.log("DB CONNECTED");
 }
 
-app.use("/", eventRoute);
+app.use("/api/", eventRoute);
 
 app.listen(3000, ()=> {
     console.log("Server running on PORT 3000")
