@@ -15,7 +15,7 @@ There is no need to login or provide personal information. The application utili
 - This was placed due to a series of users requesting specific weather information during night golf events
 
 # Deployment
-This app is deployed via [Vercel](https://glow-golf-score.vercel.app/). It can also be accessed via [QR code](https://ibb.co/VmHJ177).
+This app is deployed via [Vercel](https://glow-golf-score-one.vercel.app/). It can also be accessed via [QR code](https://ibb.co/VmHJ177).
 
 # Style Guide
 [Updated mockups and design guidelines](https://drive.google.com/drive/folders/1oJgb6zn90-7_nZiNfIjGvQAqanA6TCe3?usp=share_link)
