@@ -25,8 +25,8 @@ const Home = () =>{
         //         name: username
         //     })
         // })
-        
-        axios.post("/api/add-event", {eventId, name: username})
+
+        axios.post("/api/add-event", {eventId: eventId, name: username})
         .then(response=> response.json())
         .then(res=> {
                 if(res.message === "Invalid eventId"){
