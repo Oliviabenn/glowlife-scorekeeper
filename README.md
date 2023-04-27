@@ -15,20 +15,23 @@ There is no need to login or provide personal information. The application utili
 - About [Open Weather](https://rapidapi.com/worldapi/api/open-weather13/), Via worldapi:
 - Access current weather data for any location including over 200,000 cities.
 - Weather data from different sources such as global and local weather models, satellites, radars and a vast network of weather stations.
-- / Displayed on the scores page so the user can keep track of the current temperature and wind speed
+- Displayed on the scores page so the user can keep track of the current temperature and wind speed
 - This was placed due to a series of users requesting specific weather information during night golf events
 
 # Deployment
-This app is deployed via [Vercel](https://glow-golf-score-one.vercel.app/). It can also be accessed via [QR code](https://ibb.co/VmHJ177).
+This app is deployed via [Vercel](https://glow-golf-score-one.vercel.app/). It can also be accessed via [QR code](https://www.dropbox.com/s/t2rz658uur648xd/glowlife_app_qr.png?dl=0).
 
 # Style Guide
 [Updated mockups and design guidelines](https://drive.google.com/drive/folders/1oJgb6zn90-7_nZiNfIjGvQAqanA6TCe3?usp=share_link)
+![style_updated](https://user-images.githubusercontent.com/77904773/234968366-0d6a53b8-2c27-49e9-9c56-d5233ad06224.png)
+
+
 
 # References, Materials
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - In addition to available lectures and course materials (via Canvas), a series of [external references](https://www.canva.com/design/DAFhOjPlRl8/6bT43fcGmaCFF3vcmHBM0g/edit?utm_content=DAFhOjPlRl8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) were used when setting up the database and having the scores/names stored.
 
--- 
+
 # Project Requirements
 (via Canva)
 - NextJS and React application
