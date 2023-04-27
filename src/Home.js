@@ -18,7 +18,8 @@ const Home = () =>{
         fetch("/api/add-event", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                 Accept: "application/json" 
             }, 
             body: JSON.stringify({
                 eventId: eventId,
@@ -26,7 +27,6 @@ const Home = () =>{
             })
         })
 
-        // axios.post("/api/add-event", {eventId: eventId, name: username})
         .then(response=> response.json())
         .then(res=> {
                 if(res.message === "Invalid eventId"){
@@ -40,7 +40,7 @@ const Home = () =>{
                 }
          
         })
-        .catch();
+        .catch(err=> console.log(err));
     };
 
 //TODO: Create a form for inputting the event ID and user nickname.
