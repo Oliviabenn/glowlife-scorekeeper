@@ -14,8 +14,6 @@ const Home = () =>{
     const handleSubmit=(e)=> {
         e.preventDefault();
 
-        console.log(eventId, username)
-
         fetch("/api/add-event", {
             method: "POST",
             headers: {
@@ -40,7 +38,7 @@ const Home = () =>{
          
         })
         .catch(err=> console.log(err));
-    }
+    };
 
 //TODO: Create a form for inputting the event ID and user nickname.
 
