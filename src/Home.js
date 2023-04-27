@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 
 
 //TODO: Redirect to score page after the user submits the homepage form.
@@ -15,18 +15,18 @@ const Home = () =>{
     const handleSubmit=(e)=> {
         e.preventDefault();
 
-        // fetch("/api/add-event", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json"
-        //     }, 
-        //     body: JSON.stringify({
-        //         eventId: eventId,
-        //         name: username
-        //     })
-        // })
+        fetch("/api/add-event", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            }, 
+            body: JSON.stringify({
+                eventId: eventId,
+                name: username
+            })
+        })
 
-        axios.post("/api/add-event", {eventId: eventId, name: username})
+        // axios.post("/api/add-event", {eventId: eventId, name: username})
         .then(response=> response.json())
         .then(res=> {
                 if(res.message === "Invalid eventId"){
