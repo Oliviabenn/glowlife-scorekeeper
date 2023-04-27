@@ -13,7 +13,9 @@
 }
 
 img {
-  padding: 3rem;
+  /* width: 100%; */
+  margin:auto;
+  text-align: center;
 }
 
 body{
@@ -200,6 +202,12 @@ form{
   margin: auto;
 }
 
+.logo p{
+  width: 100%;
+  text-align: center;
+
+}
+
 /* Media queries for mobile responsiveness */
 @media screen and (max-width: 767px) {
   .content {
@@ -214,6 +222,12 @@ form{
 
   .weather-container {
     width: 100%;
+  }
+
+  .weather-container div{
+    width: 100%;
+    margin: auto;
+    display: flex;
   }
 
   .weather-container h3 {
@@ -231,5 +245,15 @@ form{
   .logo{
     text-align: center;
     width: 100%;
+  }
+
+  .logo p{
+    width: 100%;
+    text-align: center;
+  
+  }
+
+  .content logo{
+
   }
 }
