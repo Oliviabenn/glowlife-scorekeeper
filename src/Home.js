@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const scores = "C:\Users\olivi\OneDrive\Desktop\MMC6145\MODULE7\glowlife-scorekeeper\src\scores\Scores.js"
+
+//TODO: Redirect to score page after the user submits the homepage form.
+
 const Home = () =>{
     const [eventId, setEventId]= useState(0);
     const [username, setUsername]= useState("");
@@ -33,9 +37,6 @@ const Home = () =>{
                 else{
                     localStorage.setItem("USERNAME", res.event.name);
                     localStorage.setItem("CITY", city)
-
-//TODO: Redirect to score page after the user submits the homepage form.
-
                     navigate("/scores")
                 }
          
@@ -68,7 +69,7 @@ const Home = () =>{
                 </p>
                 </div>
 
-                <button type="submit" class="submit">Submit</button>
+                <button type="submit" class="submit"><a href={scores}>Submit</a></button>
             </form>            
         </div>
 
